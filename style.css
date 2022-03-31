@@ -1,7 +1,10 @@
 * {
     box-sizing: border-box;
 }
-
+#img1{
+    width: fit-content;
+viewport-fit:initial;
+}
 /* Style the navbar */
 .topnav {
     overflow: hidden;
@@ -30,28 +33,28 @@
     float: right;
 }
 
-/* Style the input field inside the navbar */
-.topnav input[type=text] {
-    padding: 6px;
-    margin-top: 8px;
-    font-size: 17px;
-    border: none;
-    width: 150px;
-    /* adjust as needed (as long as it doesn't break the topnav) */
-}
-
 /* Style the button inside the input container */
 .topnav .signin-container button {
     float: right;
-    padding: 6px;
+    font-size: 16px;
+    margin-left: 10px;
     margin-top: 8px;
     margin-right: 16px;
     background: white;
     font-size: 17px;
-    border: solid#8d448b;
+    border: solid#8d448b 2px;
+    color: #8d448b;
     cursor: pointer;
     border-radius: 5px;
-    color: #8d448b;
+    padding: 8px 24px;
+    box-sizing: border-box;
+    min-width: 0;
+    font-weight: 700;
+    cursor: pointer;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    font-weight: 700;
+    letter-spacing: -0.16px;
 }
 
 
@@ -107,18 +110,25 @@ section{
 #t1{
     font-weight: bold;
     font-size: 4em;
-    
 }
 #p1{
     font-size: 1.2em;}
 #subscribe{
     background-color: #8d448b;
     color: white;
-    border-radius: 3px;
+    border-radius: 4px;
+    padding: 0 15px;
+    margin-left: 10px;
+    font-size: 16px;
+    width: 180px;
+    box-sizing: border-box;
 }
 .form{
     border: 0;
-    padding: 15px;
+ 
+    height: 55px;
+    padding: 0 25px;
+    font-size: 16px;
 }
 #Home, #Services, #Testimonials, #Team, #Pricing,#Faq {
     height: 100vh;
@@ -126,8 +136,15 @@ section{
 #Services{
     margin-top: 50px;
 }
+h3{
+    font-weight: bold;
+}
 #ps{text-align: center;
     color: #8d448b;
+    font-size: 12px;
+    line-height: 1;
+    margin-bottom: 50px;
+    box-sizing: border-box;
 }
 #r1{
     text-align: center;
@@ -136,4 +153,15 @@ section{
 }
 #hs1{
     text-align: center;
+}
+#Services img{
+height: 100px;
+}
+@media screen and (min-width: 992px)
+#ps {
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+#img3{
+    width: 75%;
 }
